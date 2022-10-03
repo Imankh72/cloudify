@@ -4,12 +4,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Typography */
 @layer base {
   body {
     font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    @apply text-[24px] lg:text-[18px];
   }
 
   h1 {
-    @apply text-3xl md:text-6xl;
+    @apply text-[70px] lg:text-[80px];
+  }
+
+  h2 {
+    @apply text-[40px] lg:text-[50px];
+  }
+
+  h3 {
+    @apply text-[30px] lg:text-[24px];
+  }
+}
+
+/* Links */
+@layer components {
+  .link-arrow {
+    @apply uppercase text-accent text-[20px] font-bold lg:text-[15px];
+  }
+
+  .link-arrow::after {
+    content: "-->";
+    @apply ml-[5px] transition-all;
+  }
+
+  .link-arrow:hover::after {
+    @apply ml-[10px];
   }
 }
