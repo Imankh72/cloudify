@@ -11,6 +11,7 @@ module.exports = {
       secondary: "#f6b319",
       tertiary: "#c071ae",
       accent: "#10103c",
+      white: "#fff",
     },
   },
   plugins: [],

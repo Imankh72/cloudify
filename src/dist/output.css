@@ -415,6 +415,10 @@ video {
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
   font-size: 24px;
 }
 
@@ -450,7 +454,7 @@ h3{
 
 @media (min-width: 1024px){
   h3{
-    font-size: 24px;
+    font-size: 40px;
   }
 }
 
@@ -595,6 +599,8 @@ h3{
   --tw-backdrop-sepia:  ;
 }
 
+/* Links */
+
 .link-arrow{
   font-size: 20px;
   font-weight: 700;
@@ -621,6 +627,30 @@ h3{
   margin-left: 10px;
 }
 
-/* Typography */
+/* Badges */
 
-/* Links */
+.badge{
+  white-space: nowrap;
+  border-radius: 20px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (min-width: 1024px){
+  .badge{
+    font-size: 15px;
+  }
+}
+
+.badge--secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 179 25 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* Typography */
